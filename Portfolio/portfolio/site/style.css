@@ -1,0 +1,61 @@
+body{
+  font-family: 'Nunito';
+  margin: 0px;
+  padding: 0px;
+  height: calc( 910px * 5);
+}
+.home-page{
+  z-index:  1;
+  background-color: black;
+  height: 910px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background-image{
+  z-index: 0;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  background-image: url(./../imagem/Screenshot_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.titulo-nome-completo{
+  font-size: 76px;
+}
+.titulo-nome-completo:hover{
+  text-shadow: 1px 1px 2px white ;
+}
+.subtitulo-carreira{
+  margin-top: -6px;
+}
+.menu-lateral{
+  width: 35px;
+  height: 350px;
+  position: fixed;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-nav{
+  width: 17.5px;
+  height: 17.5px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+
+.menu-ativo{
+  background-color: rgba(252, 249, 249, 0.384);
+  cursor: pointer;
+  width: calc(50% + 13%);
+  height: 6%;
+}
