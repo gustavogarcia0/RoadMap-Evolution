@@ -1,61 +1,54 @@
-body{
-  font-family: 'Nunito';
+/* #132226
+#5E747A
+#93E6CA
+#E9D0CF
+#B3607B */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  height: 3000px;
   margin: 0px;
   padding: 0px;
-  height: calc( 910px * 5);
-}
-.home-page{
-  z-index:  1;
-  background-color: black;
-  height: 910px;
-  color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.background-image{
-  z-index: 0;
-  position: relative;
-  width: 50%;
-  height: 50%;
-  background-image: url(./../imagem/Screenshot_1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
-.titulo-nome-completo{
-  font-size: 76px;
+.home {
+  background-color: #5e747a;
+  height: calc(100vh - 5px);
 }
-.titulo-nome-completo:hover{
-  text-shadow: 1px 1px 2px white ;
-}
-.subtitulo-carreira{
-  margin-top: -6px;
-}
-.menu-lateral{
-  width: 35px;
-  height: 350px;
+.elementos-home-card-esquerda {
   position: fixed;
-  right: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #132226;
+  width: 450px;
+  height: calc(100vh - 5px);
+  border: #5e747a 2px solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.menu-nav{
-  width: 17.5px;
-  height: 17.5px;
-  border-radius: 100%;
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 25px;
+.home .foto-gustavo {
+  margin-top: 25px;
+  margin-bottom: -130px;
+  width: 45%;
+  height: 45%;
+}
+.home .foto-gustavo img {
+  width: 100%;
+  border: 7px solid #5e747a;
 }
 
-.menu-ativo{
-  background-color: rgba(252, 249, 249, 0.384);
-  cursor: pointer;
-  width: calc(50% + 13%);
-  height: 6%;
+.resumo-sobre {
+  margin-top: 25px;
+  width: 95%;
+  text-align: justify;
+}
+
+.experiencia {
+  height: calc(100vh - 5px);
+  background-color: black !important;
 }
