@@ -19,12 +19,14 @@ body {
   height: calc(100vh - 5px);
 }
 .elementos-home-card-esquerda {
+  box-shadow: 9px 6px 20px -6px rgba(0, 0, 0, 0.68);
   position: fixed;
+  top: calc(50vh - 50%);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #132226;
   width: 450px;
-  height: calc(100vh - 5px);
+  height: calc(80vh - 5px);
   border: #5e747a 2px solid;
   display: flex;
   flex-direction: column;
@@ -33,7 +35,7 @@ body {
 
 .home .foto-gustavo {
   margin-top: 25px;
-  margin-bottom: -130px;
+  margin-bottom: -34px;
   width: 45%;
   height: 45%;
 }
@@ -43,12 +45,33 @@ body {
 }
 
 .resumo-sobre {
-  margin-top: 25px;
-  width: 95%;
+  margin-top: 48px;
+  width: 80%;
   text-align: justify;
 }
 
 .experiencia {
   height: calc(100vh - 5px);
   background-color: black !important;
+}
+
+.icon-menu svg {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(215deg)
+    brightness(108%) contrast(97%);
+  cursor: pointer;
+  padding: 10px;
+}
+.icon-menu div:hover svg {
+  filter: invert(0%) sepia(6%) saturate(7470%) hue-rotate(187deg)
+    brightness(98%) contrast(100%);
+  background-color: white;
+  width: calc(35% + 10px);
+  border-radius: 15px;
+}
+
+.menu-barra-lateral {
+  display: flex;
+  margin-top: 30px;
 }
