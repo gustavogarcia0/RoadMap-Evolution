@@ -18,6 +18,13 @@ body {
   background-color: #5e747a;
   height: calc(100vh - 5px);
 }
+
+.elementos-home-card-esquerda.fechado {
+  left: -408px;
+}
+.elementos-home-card-esquerda.aberto {
+  left: -2px;
+}
 .elementos-home-card-esquerda {
   box-shadow: 9px 6px 20px -6px rgba(0, 0, 0, 0.68);
   position: fixed;
@@ -32,21 +39,24 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.elementos-home-card-esquerda:hover {
+  box-shadow: 9px 16px 25px 1px rgba(0, 0, 0, 0.68);
+}
 
-.home .foto-gustavo {
+.foto-gustavo {
   margin-top: 25px;
-  margin-bottom: -34px;
+  margin-bottom: -80px;
   width: 45%;
   height: 45%;
 }
-.home .foto-gustavo img {
+.foto-gustavo img {
   width: 100%;
   border: 7px solid #5e747a;
 }
 
 .resumo-sobre {
   margin-top: 48px;
-  width: 80%;
+  width: 74%;
   text-align: justify;
 }
 
@@ -58,14 +68,12 @@ body {
 .icon-menu svg {
   width: 32px;
   height: 32px;
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(215deg)
-    brightness(108%) contrast(97%);
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(215deg) brightness(108%) contrast(97%);
   cursor: pointer;
   padding: 10px;
 }
 .icon-menu div:hover svg {
-  filter: invert(0%) sepia(6%) saturate(7470%) hue-rotate(187deg)
-    brightness(98%) contrast(100%);
+  filter: invert(0%) sepia(6%) saturate(7470%) hue-rotate(187deg) brightness(98%) contrast(100%);
   background-color: white;
   width: calc(35% + 10px);
   border-radius: 15px;
@@ -74,4 +82,35 @@ body {
 .menu-barra-lateral {
   display: flex;
   margin-top: 30px;
+  flex-direction: row;
+}
+
+.menu-barra-lateral.container-fechado {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  position: absolute;
+  right: -3px;
+  top: 155px;
+}
+
+.botao-abrir-fechar {
+  position: absolute;
+  left: 410px;
+  bottom: 9px;
+}
+
+.botao-abrir-fechar.fechar {
+  transform: rotateY(180deg);
+}
+
+.botao-abrir-fechar.abrir {
+  transform: rotateY(0deg);
+}
+
+.botao-abrir-fechar svg {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(215deg) brightness(108%) contrast(97%);
+  cursor: pointer;
 }
