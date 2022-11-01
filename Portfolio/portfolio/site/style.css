@@ -19,6 +19,20 @@ body {
   height: calc(100vh - 5px);
 }
 
+.home .home_Content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home .funcoes {
+  width: 25%;
+}
+
 .elementos-home-card-esquerda.fechado {
   left: -408px;
 }
@@ -33,11 +47,11 @@ body {
   border-bottom-right-radius: 15px;
   background: #132226;
   width: 450px;
-  height: calc(80vh - 5px);
   border: #5e747a 2px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 70vh;
 }
 .elementos-home-card-esquerda:hover {
   box-shadow: 9px 16px 25px 1px rgba(0, 0, 0, 0.68);
@@ -45,7 +59,7 @@ body {
 
 .foto-gustavo {
   margin-top: 25px;
-  margin-bottom: -80px;
+  margin-bottom: 15px;
   width: 45%;
   height: 45%;
 }
@@ -55,7 +69,7 @@ body {
 }
 
 .resumo-sobre {
-  margin-top: 48px;
+  margin-top: 26px;
   width: 74%;
   text-align: justify;
 }
